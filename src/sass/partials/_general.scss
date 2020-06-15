@@ -1,0 +1,31 @@
+body{
+    font: 400 16px / 1.5 $lato;
+    color: black;
+}
+a{
+    color: $green;
+    transition: all .3s ease;
+    text-decoration: none;
+    &:hover{
+        color:$green-hover;
+    }
+}
+img{
+    max-width: 100%;
+    height: auto ;
+}
+.cls-2 {
+    font-size: 28px;
+    font-family: "Fira Sans";
+    font-weight: 600;
+  }
+
+  .cls-3 {
+    font-size: 32px;
+  }
+
+  .bg-cover{
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+  }

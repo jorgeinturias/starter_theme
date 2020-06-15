@@ -1,0 +1,43 @@
+.btn{
+  font-size: 16px;
+  font-weight: 700;
+  padding: 0 30px;
+  text-transform: uppercase;
+  display: inline-block;
+  letter-spacing: 1.5px;
+  transition: .3s;
+  cursor: pointer;
+  width: 268px;
+  box-sizing: border-box;
+  border: none;
+  background: $green;
+  color: white;
+  position: relative;
+  line-height: 56px;
+  border-radius: 56px;
+  &::after{
+    content: '\e800';
+    width:6px;
+    height: 10px;
+    font-family: "fontello";
+    font-style: normal;
+    font-weight: normal;
+    position: absolute;
+    right: 32px;
+    top: 50%;
+    transform: translateY(-50%);
+    line-height: 0.5;
+    transition: all 0.3s;
+    color: white;
+}
+  &:hover{
+      background: $green-hover;
+      color: white;
+      &::after{
+          right: 26px;
+      }
+  }
+  @media(max-width:768px){
+    font-size: 14px;
+  }
+}
